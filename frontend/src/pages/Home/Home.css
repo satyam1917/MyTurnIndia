@@ -1,0 +1,636 @@
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+  line-height: 1.6;
+  position: relative; /* Allow absolute positioning of background elements */
+}
+
+
+
+/* Full-Screen Video Background */
+.background-video-home {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire area */
+  z-index: -1; /* Places the video behind other content */
+  opacity: 0.8; /* Optional: Makes video slightly transparent */
+}
+
+/* Homepage Container */
+.homepage-home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+ 
+  gap: 40px;
+  background-color: #f4f5f7;
+  box-sizing: border-box;
+  position: relative; /* Ensure content sits above the background */
+  z-index: 1; /* Ensures content stays above the video */
+}
+
+/* Left Content Styling */
+.content-home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  width: 100%;
+  overflow: hidden;
+  position: relative; /* Content inside this div stays above the background */
+}
+
+.text-content-home {
+  max-width: 50%;
+  min-width: 320px;
+  text-align: -webkit-center;
+  z-index: 2; /* Ensures text stays above the video */
+  color: white;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #2a73cc;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 .coursera-home {
+  color: #2a73cc;
+}
+
+.plus-home {
+  color: #ffffff;
+  background-color: #f47321;
+  padding: 6px 12px;
+  font-size: 22px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+h2 {
+  font-size: 28px;
+  margin: 20px 0;
+  font-weight: 600;
+  color: #444;
+}
+
+.description-home {
+  font-size: 18px;
+  color: white;
+  margin: 15px 0;
+}
+
+.cta-button-home {
+  background: linear-gradient(to right, #2a73cc, #1a5ba1);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 20px 0;
+  transition: all 0.3s ease, transform 0.3s ease;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button-home:hover {
+  background: linear-gradient(to right, #1a5ba1, #2a73cc);
+  transform: scale(1.05);
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Right Side Animation */
+.animation-container-home {
+  position: relative;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-icon-home, .graduation-cap-home {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 10px;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+  animation: float 4s ease-in-out infinite;
+}
+
+.book-icon-home {
+  background: linear-gradient(45deg, #6c9ee3, #2a73cc);
+}
+
+.graduation-cap-home {
+  background-color: #f47321;
+  transform: rotate(45deg);
+  animation-delay: 2s;
+}
+
+.book-icon-home::before, .graduation-cap-home::before {
+  content: "";
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .content-home {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+  
+  }
+
+  .text-content-home {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .animation-container-home {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .cta-button-home {
+    padding: 12px 25px;
+    font-size: 15px;
+  }
+
+  .pricing-info-home {
+    font-size: 14px;
+  }
+}
+
+
+
+.cta-button-home {
+  background: linear-gradient(to right, #2a73cc, #1a5ba1);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 20px 0;
+  transition: all 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button-home:hover {
+  background: linear-gradient(to right, #1a5ba1, #2a73cc);
+  transform: scale(1.05);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-info-home {
+  font-size: 16px;
+  color: #777;
+}
+
+.yearly-price-home {
+  color: #2a73cc;
+  font-weight: bold;
+}
+
+/* Right Side Animation */
+.animation-container-home {
+  position: relative;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.decorative-box-home {
+  width: 280px;
+  height: 280px;
+  background: linear-gradient(to bottom right, #85c8ff, #2a73cc);
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.person-home {
+  width: 110px;
+  height: 110px;
+  background: linear-gradient(135deg, #f47321, #ffaf42);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.circle-home {
+  width: 350px;
+  height: 350px;
+  background: rgba(42, 115, 204, 0.15);
+  position: absolute;
+  border-radius: 50%;
+  top: 10%;
+  left: 40%;
+  animation: float 6s infinite ease-in-out;
+}
+
+.light-circle-home {
+  width: 400px;
+  height: 400px;
+  background: rgba(244, 115, 33, 0.1);
+  position: absolute;
+  border-radius: 50%;
+  bottom: 10%;
+  right: 20%;
+  animation: float 8s infinite ease-in-out;
+}
+
+/* Course Cards Section */
+.course-categories-home {
+  
+  
+  
+  margin-top: 30px;
+}
+
+.course-category-home {
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.course-category-home h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #2a73cc;
+}
+
+.course-category-home p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.course-cards-home {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+}
+
+.course-card-home {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease, background-color 0.3s ease;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.course-card-home:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+}
+
+.course-card-home img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.course-card-home h4 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: 700;
+}
+
+.course-card-home p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  color: #555;
+  flex-grow: 1;
+}
+
+.course-card-home.cta-button-home {
+  background: #2a73cc;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 14px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.course-card-home .cta-button-home:hover {
+  background-color: #1a5ba1;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Show More Button */
+.show-more-home {
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  background-color: #2a73cc;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 30px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 40px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.show-more-home:hover {
+  background-color: #1a5ba1;
+  transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .homepage-home {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .content-home {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 40px;
+   
+  }
+
+  .animation-container-home {
+    display: none;
+  }
+
+  .course-cards-home {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .course-category-home{
+    padding:20px ;
+  }
+
+ 
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .cta-button-home {
+    padding: 12px 25px;
+    font-size: 15px;
+  }
+
+  .pricing-info-home {
+    font-size: 14px;
+  }
+
+  .course-card-home h4 {
+    font-size: 1.2rem;
+  }
+
+  .course-card-home .cta-button-home {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+
+  .show-more-home {
+    font-size: 16px;
+    padding: 12px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  
+  .homepage-home {
+    
+  }
+  .course-category-home{
+    padding:20px ;
+  }
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .cta-button-home {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+
+/* Style the category header to use flexbox */
+.category-header-home {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin-bottom: 20px; 
+}
+
+.category-title-home {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.category-description-home {
+  font-size: 16px;
+  color: #555;
+  margin-top: 5px;
+  text-align: left;
+}
+
+/* Enhanced style for 'See More Courses' link/button */
+.see-more-link-home {
+  padding: 12px 25px;
+  background: linear-gradient(45deg, #2196F3, #1E88E5); 
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.see-more-link-home:hover {
+  color: white;
+  background: linear-gradient(45deg, #1E88E5, #2196F3); 
+  transform: translateY(-3px); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+.see-more-link-home:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 87, 34, 0.6); /* Add focus ring */
+}
+
+.see-more-link-home:active {
+  background: linear-gradient(45deg, #d84315, #e64a19); 
+  transform: translateY(0); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+/* Responsive Styling for Small Screens */
+@media screen and (max-width: 768px) {
+  .see-more-link-home {
+    padding: 10px 20px;
+    font-size: 14px; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .see-more-link-home {
+    padding: 8px 15px; 
+    font-size: 12px; 
+  }
+}
+
+
+body.dark .homepage-home{
+  background-color: #121212;
+  color: white;
+  
+} 
+
+
+
+
+
+/* Dark Theme Colors */
+:root {
+  --bg-color-dark: #121212;
+  --text-color-dark: #e0e0e0;
+  --primary-color-dark: #1e3a8a; /* Dark blue */
+  --secondary-color-dark: #2563eb; /* Blue */
+  --accent-color-dark: #3b82f6; /* Light blue */
+  
+}
+
+/* Light Theme Colors */
+:root {
+  --bg-color-light: #ffffff;
+  --text-color-light: #000000;
+  --primary-color-light: #6200ee;
+  --secondary-color-light: #03dac6;
+  --accent-color-light: #03dac6;
+}
+
+/* Dark Theme */
+body.dark .homepage-home {
+  background-color: var(--bg-color-dark); /* Dark theme background */
+  color: var(--text-color-dark); /* Dark theme text color */
+}
+
+body.dark .homepage-home h1,
+body.dark .homepage-home p {
+  color: var(--text-color-dark); /* Apply dark text color to headings and paragraphs */
+}
+
+body.dark .cta-button-home {
+  background: var(--primary-color-dark);
+  color: var(--text-color-dark);
+}
+
+body.dark .cta-button-home:hover {
+  background: var(--secondary-color-dark);
+}
+
+body.dark .course-card-home {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+  border: 1px solid var(--accent-color-dark);
+}
+
+/* body.dark .course-card-home:hover {
+  background-color: var(--primary-color-dark);
+} */
+
+body.dark .show-more-home {
+  background-color: var(--primary-color-dark);
+  color: var(--text-color-dark);
+}
+
+body.dark .show-more-home:hover {
+  background-color: var(--secondary-color-dark);
+}

@@ -1,0 +1,102 @@
+/* Container for the Upload Form */
+.upload-container {
+  padding: 20px;
+  width: 1100px;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.upload-container h1, .upload-container h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.upload-label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  color: #34495e;
+}
+
+.upload-select, .upload-input, .upload-file {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.upload-select:focus, .upload-input:focus, .upload-file:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.upload-button {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+  background-color: #2980b9;
+}
+
+.upload-button:active {
+  background-color: #1c5980;
+}
+
+.upload-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-close-btn:hover {
+  background: #c0392b;
+}
+
+.upload-section, .upload-material-container, .upload-quiz-container, .upload-video-container {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.upload-container h3 {
+  color: #34495e;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.upload-input-group {
+  margin-bottom: 15px;
+}
+
+.upload-input-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  color: #2c3e50;
+}

@@ -1,0 +1,140 @@
+/* Container for the Paid Events Form */
+.paid-events-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #f3f4f6; /* Light grey background */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+/* Styling for the file input (banner image) */
+.paid-events-form-group input[type="file"] {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #000; /* Black background */
+  color: white; /* White text */
+}
+
+/* Styling for the location input field */
+.paid-events-form-group input[type="text"] {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  background-color: #000; /* Black background */
+  color: white !important; /* White text with !important */
+  transition: all 0.3s ease-in-out;
+}
+
+.paid-events-form-group input[type="text"]:focus {
+  border-color: #2980b9; /* Blue border on focus */
+  outline: none;
+  color: #000 !important;
+  background-color: #fff; /* Slightly darker background on focus */
+}
+
+
+.paid-events-container:hover {
+  transform: translateY(-10px); /* Smooth hover effect */
+}
+
+.paid-events-container h2 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Styling for form inputs */
+.paid-events-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.paid-events-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.paid-events-form-group label {
+  font-weight: bold;
+  color: #34495e;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+/* Styling for the text fields: black background and white text */
+
+.paid-events-form input,
+.paid-events-form textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  background-color: #000; /* Black background */
+  color: white !important; /* White text with !important */
+  transition: all 0.3s ease-in-out;
+}
+
+.paid-events-form input:focus,
+.paid-events-form textarea:focus {
+  border-color: #2980b9; /* Blue border on focus */
+  outline: none;
+  background-color: #fff; /* Slightly darker background on focus */
+}
+
+
+.paid-events-form input:focus,
+.paid-events-form textarea:focus {
+  border-color: #2980b9; /* Blue border on focus */
+  outline: none;
+  background-color: #fff; /* Slightly darker background on focus */
+}
+
+/* Styling for the Submit button with blue color */
+.paid-events-button {
+  padding: 14px 20px;
+  font-size: 18px;
+  background-color: #2980b9; /* Blue background */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.paid-events-button:hover {
+  background-color: #3498db; /* Lighter blue on hover */
+  transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+.paid-events-button:active {
+  background-color: #1d6a8c; /* Darker blue when clicked */
+}
+
+/* Styling for required input fields */
+.paid-events-form input:required,
+.paid-events-form textarea:required {
+  background-color: #111; /* Dark background for required fields */
+}
+
+/* Optional: Add responsiveness */
+@media (max-width: 768px) {
+  .paid-events-container {
+    padding: 20px;
+  }
+
+  .paid-events-form input,
+  .paid-events-form textarea,
+  .paid-events-button {
+    font-size: 14px;
+  }
+}

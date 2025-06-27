@@ -1,0 +1,216 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f8fc;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  /* Container for the login form */
+  .login-container {
+    margin-top: 5%;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 480px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .login-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Form title */
+  .form-title {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 3px solid #007bff;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+  
+  /* Input and Select Fields */
+  .input-group {
+    position: relative;
+    margin-bottom: 25px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 14px 16px 14px 40px; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: 0.3s ease;
+    box-sizing: border-box;
+  }
+  
+  .input-group i {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #007bff;
+    font-size: 20px;
+  }
+  
+  /* Focus Effect */
+  .input-group input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* Password Field */
+  .password-wrapper {
+    position: relative;
+  }
+  
+  .password-wrapper input {
+    width: 100%;
+    padding-right: 40px; 
+  }
+  
+  .password-wrapper .toggle-password {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .password-wrapper .toggle-password i {
+    font-size: 20px;
+  }
+  
+  /* Button Styles */
+  .btn {
+    width: 100%;
+    padding: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  /* Button Hover effect */
+  .btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Button Active (press effect) */
+  .btn:active {
+    background-color: #004085;
+    transform: translateY(2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+  }
+  
+  /* Focus effect for accessibility */
+  .btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Helper Text */
+  .helper-text {
+    text-align: center;
+    font-size: 16px;
+    color: #777;
+  }
+  
+  .helper-text .link {
+    color: #007bff;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .helper-text .link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Admin Login Text */
+  .admin-login-text {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+  }
+  
+  .admin-login-text .link {
+    color: #007bff;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .admin-login-text .link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Forgot Password Text */
+  .forgot-password-text {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+  }
+  
+  .forgot-password-text .link {
+    color: #007bff;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .forgot-password-text .link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .form-title {
+        font-size: 24px;
+    }
+  
+    .input-group input {
+        font-size: 14px;
+    }
+  
+    .btn {
+        font-size: 16px;
+    }
+  
+    .input-group .icon {
+        font-size: 16px;
+    }
+  }
+  

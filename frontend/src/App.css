@@ -1,0 +1,185 @@
+/* Global Reset: Remove default margin and padding from all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Light Theme Variables */
+:root {
+  --bg-color-light: #f9fafb;
+  --text-color-light: #333;
+  --primary-color-light: #2a73cc;
+  --secondary-color-light: #f47321;
+  --button-bg-light: linear-gradient(to right, #2a73cc, #1a5ba1);
+  --button-hover-bg-light: linear-gradient(to right, #1a5ba1, #2a73cc);
+  --card-bg-light: #fff;
+  --card-hover-bg-light: #f9f9f9;
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --shadow-hover-light: rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Theme Variables */
+[data-theme="dark"] {
+  --bg-color-dark: #181818;
+  --text-color-dark: #e0e0e0;
+  --primary-color-dark: #2a73cc;
+  --secondary-color-dark: #f47321;
+  --button-bg-dark: linear-gradient(to right, #2a73cc, #1a5ba1);
+  --button-hover-bg-dark: linear-gradient(to right, #1a5ba1, #2a73cc);
+  --card-bg-dark: #333;
+  --card-hover-bg-dark: #444;
+  --shadow-dark: rgba(255, 255, 255, 0.1);
+  --shadow-hover-dark: rgba(255, 255, 255, 0.3);
+}
+
+body.light {
+  background-color: white;
+  color: black;
+}
+
+body.dark {
+  background-color: #121212; /* Dark background */
+  color: white; /* White text */
+}
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure html, body, and #root take the full width and height of the viewport */
+html, body, #root {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container for the app */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Additional styles for cards, logos, etc. based on theme */
+.card {
+  padding: 2em;
+}
+
+/* Styling for Navbar */
+.navbar {
+  background-color: #fff; /* Light background */
+  color: black; /* Light text */
+  transition: all 0.3s ease-in-out;
+}
+
+body.dark .navbar {
+  background-color: black; /* Dark background */
+  color: white; /* Dark text */
+}
+
+/* Button styles for toggling theme */
+.theme-toggle-btn {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+body.dark .theme-toggle-btn {
+  border-color: #444;
+  color: white;
+}
+
+body.light .theme-toggle-btn {
+  border-color: #888;
+  color: black;
+}
+
+.theme-toggle-btn:hover {
+  background-color: #ddd;
+}
+
+body.dark .theme-toggle-btn:hover {
+  background-color: #555;
+}
+/* Ensure html, body, and #root take the full width and height of the viewport */
+html, body, #root {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Root styles */
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling for logo */
+
+
+
+/* Apply white text color to the input fields (email, text, and number) */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  color: white;  /* Change text color */
+  background-color: #ccc; /* Optional: Adjust background color for contrast */
+  border: 1px solid #ccc; /* Optional: Border styling */
+}
+
+/* Change color of labels and placeholder text */
+label,
+input::placeholder {
+  color: white; /* Change label and placeholder text color to white */
+}
+
+
+
+
+
+/* Apply animation to logos under specific conditions */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Styling for cards */
+.card {
+  padding: 2em;
+}
+
+/* Styling for "read the docs" text */
+.read-the-docs {
+  color: #888;
+}
+
+/* Main container for the app */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  
+}

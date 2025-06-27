@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  body.dark {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  .terms-set{
+    max-width: 800px;
+    margin: 0 auto;
+}
+  .terms-container {
+   width: 100%;
+    padding: 20px;
+    background-color: #fff;
+   
+  }
+  
+  body.dark .terms-container {
+    background-color: #1f1f1f;
+  }
+  
+  .terms-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .terms-header h1 {
+    color: #2c3e50;
+    font-size: 2em;
+  }
+  
+  body.dark .terms-header h1 {
+    color: #ecf0f1;
+  }
+  
+  .terms-content {
+    color: #34495e;
+  }
+  
+  body.dark .terms-content {
+    color: #bdc3c7;
+  }
+  
+  .terms-section {
+    margin-bottom: 20px;
+  }
+  
+  .terms-section h2 {
+    color: #e74c3c;
+    font-size: 1.3em;
+  }
+  
+  body.dark .terms-section h2 {
+    color: #e67e22;
+  }
+  
+  .terms-section p {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  .terms-section ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .terms-section ul li {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    margin-bottom: 10px;
+    padding-left: 1.5em; /* Adds space for the bullet */
+    position: relative;
+  }
+  
+  body.dark .terms-section ul li {
+    color: #bdc3c7;
+  }
+  
+  body.dark .terms-section ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #e74c3c; /* Red bullet color */
+  }
+  
+  body.dark .terms-section ul li::before {
+    background-color: #e67e22; /* Orange bullet color in dark mode */
+  }
+  
+  .terms-section a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .terms-section a:hover {
+    text-decoration: underline;
+  }
+  
+  body.dark .terms-section a {
+    color: #9b59b6;
+  }
+  
+  body.dark .terms-section a:hover {
+    color: #8e44ad;
+  }
+  

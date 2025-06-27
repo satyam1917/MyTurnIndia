@@ -1,0 +1,340 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Container for the login form */
+.login-container {
+margin-top: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 480px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Form title */
+.form-title {
+  text-align: center;
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  border-bottom: 3px solid #007bff;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+/* Input and Select Fields */
+.input-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 16px 14px 40px; 
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: 0.3s ease;
+  box-sizing: border-box;
+}
+
+.input-group i {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #007bff;
+  font-size: 20px;
+}
+
+/* Focus Effect */
+.input-group input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Password Field */
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 40px; 
+}
+
+.password-wrapper .toggle-password {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.password-wrapper .toggle-password i {
+  font-size: 20px;
+}
+
+/* Button Styles */
+.btn {
+  width: 100%;
+  padding: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Button Hover effect */
+.btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Button Active (press effect) */
+.btn:active {
+  background-color: #004085;
+  transform: translateY(2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+/* Focus effect for accessibility */
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+.google{
+  display: flex;
+  justify-content: center;
+}
+
+/* Helper Text */
+.helper-text {
+  text-align: center;
+  font-size: 16px;
+  color: #777;
+}
+
+.helper-text .link {
+  color: #007bff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.helper-text .link:hover {
+  text-decoration: underline;
+}
+
+/* Admin Login Text */
+.admin-login-text {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  margin-top: 10px;
+}
+
+.admin-login-text .link {
+  color: #007bff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.admin-login-text .link:hover {
+  text-decoration: underline;
+}
+
+/* Forgot Password Text */
+.forgot-password-text {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  margin-top: 10px;
+}
+
+.forgot-password-text .link {
+  color: #007bff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.forgot-password-text .link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .form-title {
+      font-size: 24px;
+  }
+
+  .input-group input {
+      font-size: 14px;
+  }
+
+  .btn {
+      font-size: 16px;
+  }
+
+  .input-group .icon {
+      font-size: 16px;
+  }
+}
+
+
+.google-btn {
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white; /* Google blue */
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+ 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.google-btn:hover {
+  background-color: white; /* Slightly darker blue on hover */
+  transform: translateY(-2px);
+}
+
+.google-btn:active {
+  transform: translateY(0);
+}
+
+.google-logo {
+  width: 20px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .google-btn {
+    max-width: 250px;
+  }
+}
+
+
+/* Dark Mode Styles */
+body.dark {
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text */
+}
+
+body.dark .login-container {
+  background-color: #1e1e1e; /* Dark container background */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+body.dark .form-title {
+  color: #ffffff; /* Light text for the title */
+  border-bottom: 3px solid #2196f3; /* Accent color */
+}
+
+body.dark .input-group input {
+  background-color: #2c2c2c; /* Dark input background */
+  color: #ffffff; /* Light text */
+  border: 1px solid #444; /* Darker border */
+}
+
+body.dark .input-group input:focus {
+  border-color: #2196f3; /* Accent border color */
+  box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
+}
+
+body.dark .input-group i {
+  color: #2196f3; /* Accent icon color */
+}
+
+body.dark .password-wrapper .toggle-password {
+  color: #2196f3; /* Accent color for the toggle icon */
+}
+
+body.dark .btn {
+  background-color: #2196f3; /* Primary accent color */
+  color: white;
+}
+
+body.dark .btn:hover {
+  background-color: #1769aa; /* Darker accent on hover */
+}
+
+body.dark .btn:active {
+  background-color: #0d47a1; /* Even darker accent on active */
+}
+
+body.dark .helper-text,
+body.dark .admin-login-text,
+body.dark .forgot-password-text {
+  color: #aaaaaa; /* Muted text color */
+}
+
+body.dark .helper-text .link,
+body.dark .admin-login-text .link,
+body.dark .forgot-password-text .link {
+  color: #64b5f6; /* Light blue links */
+}
+
+body.dark .helper-text .link:hover,
+body.dark .admin-login-text .link:hover,
+body.dark .forgot-password-text .link:hover {
+  text-decoration: underline;
+}
+
+body.dark .google-btn {
+  background-color: #2c2c2c; /* Dark background for the Google button */
+  color: #ffffff; /* Light text */
+}
+
+body.dark .google-btn:hover {
+  background-color: #333; /* Slightly lighter on hover */
+}
+
+body.dark .google-logo {
+  filter: brightness(0) invert(1); /* Invert the Google logo for visibility */
+}

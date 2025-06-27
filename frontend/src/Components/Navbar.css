@@ -1,0 +1,339 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: #2c3e50;
+  padding: 0 20px; /* Reduced padding to decrease the height */
+  font-family: 'Poppins', sans-serif;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* .logo {
+  height: 40px; 
+  width: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+  
+} */
+
+.logo {
+  width: auto; /* Keep the aspect ratio of the logo */
+  height: 60px; /* Set height to 60px by default */
+  transition: transform 0.3s ease; /* Add smooth transformation for hover effect */
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+/* Hover effect for logo (slightly enlarging on hover) */
+.logo:hover {
+  transform: scale(1.1); /* Slightly increase size */
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .logo {
+    height: 50px; /* Reduce logo size for medium-sized screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    height: 40px; /* Further reduce logo size for mobile screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 35px; /* Even smaller size for very small screens */
+  }
+}
+/* Button Style */
+.theme-toggle-btn {
+  padding: 12px 24px;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  background: #007bff; /* Gradient effect */
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+/* Icon inside the button */
+.theme-toggle-btn .icon {
+    /* Space between icon and text */
+  font-size: 18px;
+}
+
+/* Hover effect */
+.theme-toggle-btn:hover {
+  background: #007bff; /* Reverse gradient on hover */
+  transform: translateY(-3px);  /* Lift effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Active state */
+.theme-toggle-btn:active {
+  background: #007bff;
+  transform: translateY(1px);  /* Slight push-down effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus state (when the button is clicked) */
+.theme-toggle-btn:focus {
+  outline: none;
+}
+
+/* For mobile screens: */
+@media (max-width: 768px) {
+  .theme-toggle-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+
+
+.navbar-center {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+
+.navbar-center .nav-link {
+  color: #2c3e50;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+.navbar-center .nav-link:hover {
+  color: #007bff;
+  background-color: rgba(0, 123, 255, 0.1);
+  transform: scale(1.05);
+}
+
+.navbar-center .dropdown-menu {
+  list-style: none;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  padding: 10px 0;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+}
+
+.navbar-center .dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.navbar-center .dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #2c3e50;
+  font-size: 15px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-center .dropdown-item:hover {
+  background-color: #007bff;
+  color: white;
+  transform: scale(1.05);
+}
+
+.navbar-right {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-right .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
+}
+
+.navbar-right .login-btn {
+  background-color: #007bff;
+}
+
+.navbar-right .login-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.navbar-right .register-btn {
+  background-color: #28a745;
+}
+
+.navbar-right .register-btn:hover {
+  background-color: #1e7e34;
+  transform: scale(1.05);
+}
+
+.hamburger-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #2c3e50;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 1100;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px;
+  }
+
+  .navbar-left {
+    margin-bottom: 10px;
+  }
+
+  .navbar-center {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar-center.active {
+    display: flex;
+  }
+
+  .navbar-right {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  .navbar-right.active {
+    display: flex;
+  }
+
+  .navbar-right .btn {
+    width: 90%;
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  .navbar-right .btn {
+    text-align: left;
+    padding: 10px 20px;
+    margin-top: 10px;
+  }
+
+  .navbar-right .register-btn {
+    background-color: #28a745;
+  }
+
+  .navbar-right .register-btn:hover {
+    background-color: #1e7e34;
+  }
+}
+
+
+/* Dark Theme Adjustments for Navbar Dropdown */
+body.dark .navbar {
+  background-color: #1e1e1e; /* Dark background for the navbar */
+  color: #ecf0f1; /* Light text color */
+}
+
+body.dark .navbar-center .nav-link {
+  color: #ecf0f1; /* Light text for nav links */
+}
+
+body.dark .navbar-center .nav-link:hover {
+  color: #007bff; /* Highlight color on hover */
+  background-color: rgba(0, 123, 255, 0.2); /* Light background on hover */
+}
+
+body.dark .navbar-center .dropdown-menu {
+  background-color: #333; /* Dark background for dropdown */
+  border-radius: 5px;
+  padding: 10px 0;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Darker shadow for contrast */
+}
+
+body.dark .navbar-center .dropdown-item {
+  color: #ecf0f1; /* Light text for dropdown items */
+  font-size: 15px;
+}
+
+body.dark .navbar-center .dropdown-item:hover {
+  background-color: #007bff;
+  color: white; /* Highlight item in blue on hover */
+}
+
+body.dark .navbar-right .login-btn {
+  background-color: #007bff; /* Light blue for login button */
+}
+
+body.dark .navbar-right .login-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+body.dark .navbar-right .register-btn {
+  background-color: #28a745; /* Green for register button */
+}
+
+body.dark .navbar-right .register-btn:hover {
+  background-color: #1e7e34; /* Darker green on hover */
+}
+
+/* Dark Theme Hamburger Icon */
+body.dark .hamburger-icon {
+  color: #ecf0f1; /* Light icon color in dark theme */
+}

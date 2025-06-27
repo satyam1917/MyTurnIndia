@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  body.dark {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  .privacy-set{
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .privacy-container {
+
+   width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    
+  }
+  
+  body.dark .privacy-container {
+    background-color: #1f1f1f;
+  }
+  
+  .privacy-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .privacy-header h1 {
+    color: #2c3e50;
+    font-size: 2em;
+  }
+  
+  body.dark .privacy-header h1 {
+    color: #ecf0f1;
+  }
+  
+  .privacy-content {
+    color: #34495e;
+  }
+  
+  body.dark .privacy-content {
+    color: #bdc3c7;
+  }
+  
+  .privacy-section {
+    margin-bottom: 20px;
+  }
+  
+  .privacy-section h2 {
+    color: #e74c3c;
+    font-size: 1.3em;
+  }
+  
+  body.dark .privacy-section h2 {
+    color: #e67e22;
+  }
+  
+  .privacy-section p {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  .privacy-section ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .privacy-section ul li {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    margin-bottom: 10px;
+    padding-left: 1.5em; /* Adds space for the bullet */
+    position: relative;
+  }
+  
+  body.dark .privacy-section ul li {
+    color: #bdc3c7;
+  }
+  
+  body.dark .privacy-section ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #e74c3c; /* Red bullet color */
+  }
+  
+  body.dark .privacy-section ul li::before {
+    background-color: #e67e22; /* Orange bullet color in dark mode */
+  }
+  
+  .privacy-section a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .privacy-section a:hover {
+    text-decoration: underline;
+  }
+  
+  body.dark .privacy-section a {
+    color: #9b59b6;
+  }
+  
+  body.dark .privacy-section a:hover {
+    color: #8e44ad;
+  }
+  

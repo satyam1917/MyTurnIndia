@@ -1,0 +1,291 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Main Container */
+.category-page-container-cat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  width: 100%;
+ 
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Header */
+h2 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 18px;
+  color: #7f8c8d;
+  margin-bottom: 40px;
+  max-width: 900px;
+  line-height: 1.6;
+}
+
+/* Courses List */
+.courses-list-category-cat {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+/* Individual Course Card */
+.course-card-category{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.course-card-category:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Course Image */
+.course-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 3px solid #e9e9e9;
+}
+
+/* Course Details */
+.course-details {
+  padding: 20px;
+  text-align: center;
+}
+
+.course-details h3 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.course-details .organization {
+  font-size: 16px;
+  color: #95a5a6;
+  margin-bottom: 12px;
+}
+
+.rating-cat {
+  display: flex;
+ 
+  color: #f39c12;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.rating-cat svg {
+  margin-right: 5px;
+}
+
+.course-details p {
+  font-size: 16px;
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+/* Price */
+.price {
+  font-size: 20px;
+  font-weight: 600;
+  color: #3498db;
+  margin-top: 10px;
+}
+
+/* Button */
+.cta-button-category {
+  background: linear-gradient(to right, #2a73cc, #1a5ba1);;
+  color: white; 
+  padding: 10px 20px;
+  border-radius: 25px; 
+  font-size: 14px; 
+  margin-top: 15px;
+  cursor: pointer; 
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  text-align: center; 
+  position: relative;
+  height: auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-button-category:hover {
+  color: white;
+  background-color: #1a5ba1; 
+  transform: scale(1.05); 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+}
+
+.cta-button-category svg {
+  margin-right: 8px; 
+}
+
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  .courses-list-category-cat{
+    gap: 20px;
+  }
+
+  .course-card-category{
+    width: 100%;
+  }
+}
+
+
+
+/* Dark Theme */
+body.dark {
+  background-color: #181818; /* Dark background */
+  color: #e0e0e0; /* Light text for dark theme */
+}
+
+body.dark .category-page-container-cat {
+  background-color: #121212; /* Dark background for the main container */
+  color: #e0e0e0; /* Light text color for dark mode */
+}
+
+body.dark .category-page-container-cat h2 {
+  color: #ecf0f1; /* Light color for the header */
+}
+
+body.dark .category-page-container-cat p {
+  color: #bdc3c7; /* Lighter color for description text */
+}
+
+body.dark .courses-list-category-cat {
+  background-color: #181818; /* Dark background for courses list */
+}
+
+body.dark .course-card-category {
+  background-color: #333; /* Dark background for course cards */
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(255, 255, 255, 0.1); /* Light shadow for dark mode */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+body.dark .course-card-category:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(255, 255, 255, 0.15); /* Light hover shadow for dark mode */
+}
+
+body.dark .course-image {
+  border-bottom: 3px solid #444; /* Darker border for course images */
+}
+
+body.dark .course-details {
+  padding: 20px;
+  text-align: center;
+}
+
+body.dark .course-details h3 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #ecf0f1; /* Light text color for course title */
+  margin-bottom: 10px;
+}
+
+body.dark .course-details .organization {
+  font-size: 16px;
+  color: #bdc3c7; /* Lighter text for educator name */
+  margin-bottom: 12px;
+}
+
+body.dark .rating-cat {
+  display: flex;
+  color: #f39c12;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+body.dark .rating-cat svg {
+  margin-right: 5px;
+}
+
+body.dark .course-details p {
+  font-size: 16px;
+  color: #bdc3c7; /* Lighter text for other course details */
+  margin-bottom: 10px;
+}
+
+body.dark .price {
+  font-size: 20px;
+  font-weight: 600;
+  color: #3498db;
+  margin-top: 10px;
+}
+
+body.dark .cta-button-category {
+  background: linear-gradient(to right, #2a73cc, #1a5ba1);;
+  color: white; 
+  padding: 10px 20px;
+  border-radius: 25px; 
+  font-size: 14px; 
+  margin-top: 15px;
+  cursor: pointer; 
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  text-align: center; 
+  position: relative;
+  height: auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body.dark .cta-button-category:hover {
+  color: white;
+  background-color: #1a5ba1; 
+  transform: scale(1.05); 
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1); /* Light hover effect for dark theme */
+}
+
+body.dark .cta-button-category svg {
+  margin-right: 8px; 
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  body.dark .courses-list-category-cat {
+    gap: 20px;
+  }
+
+  body.dark .course-card-category {
+    width: 100%;
+  }
+}

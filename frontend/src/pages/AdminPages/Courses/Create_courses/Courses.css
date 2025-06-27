@@ -1,0 +1,159 @@
+/* Reset margins and padding for full-width layout */
+
+  
+  /* Main container for the course */
+  .course-container {
+    padding: 20px;
+    background-color: #f4f6f9;
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    padding-left: 20px;
+    min-width: 1000px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: flex-start; /* Aligns content vertically */
+    flex-direction: column;
+    text-align: left; /* Text aligned left for better readability */
+    
+  }
+  
+  /* Course form container */
+  .course-form {
+    width: 100%;
+    
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form field styling */
+  .form-group {
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="file"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    color: black !important;
+  }
+  input[type="text"]:focus{
+    color: black;
+  }
+  textarea {
+    resize: vertical;
+    height: 120px;
+    color: black;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #3498db;
+    outline: none;
+    color: black;
+  }
+  
+  /* Lectures section styling */
+  .lectures-section {
+    margin-top: 30px;
+  }
+  
+  .lecture-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Quiz section styling */
+  .quiz-section {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+  }
+  
+  .quiz-card {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Buttons styling */
+  .add-lecture-button,
+  .add-mcq-button,
+  .submit-button {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+    width: 100%;
+    max-width: 200px; /* Limit button width */
+    margin: 10px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .add-lecture-button:hover,
+  .add-mcq-button:hover,
+  .submit-button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Mobile responsive design */
+  @media (max-width: 768px) {
+    .course-form {
+      padding: 20px;
+    }
+  
+    input[type="text"],
+    textarea {
+      font-size: 14px;
+    }
+  
+    .add-lecture-button,
+    .add-mcq-button,
+    .submit-button {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 22px;
+    }
+  
+    .add-lecture-button,
+    .add-mcq-button,
+    .submit-button {
+      font-size: 10px;
+      padding: 10px 15px;
+    }
+  }
+  

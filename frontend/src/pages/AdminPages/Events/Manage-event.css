@@ -1,0 +1,92 @@
+/* Container for the Manage Event Form */
+.manage-event-container {
+  width: 1100px;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.manage-event-container h2 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Styling for form inputs */
+.manage-event-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.manage-event-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.manage-event-form-group label {
+  font-weight: bold;
+  color: #34495e;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+/* Styling for the text fields */
+.manage-event-form input,
+.manage-event-form textarea,
+.manage-event-form select {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #000; /* Black background */
+  color: white !important; /* White text */
+  transition: all 0.3s ease-in-out;
+}
+
+.manage-event-form input:focus,
+.manage-event-form textarea:focus,
+.manage-event-form select:focus {
+  border-color: #2980b9; /* Blue border on focus */
+  outline: none;
+  background-color: #333; /* Slightly darker background on focus */
+  color:white; 
+}
+
+/* Button Styling */
+.manage-event-button {
+  padding: 14px 20px;
+  font-size: 18px;
+  background-color: #2980b9; /* Blue background */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.manage-event-button:hover {
+  background-color: #3498db; /* Lighter blue on hover */
+  transform: scale(1.05);
+}
+
+.manage-event-button:active {
+  background-color: #1d6a8c; /* Darker blue on click */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .manage-event-container {
+    padding: 20px;
+  }
+
+  .manage-event-form input,
+  .manage-event-form textarea,
+  .manage-event-button {
+    font-size: 14px;
+  }
+}

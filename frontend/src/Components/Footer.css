@@ -1,0 +1,223 @@
+/* Global Footer Styles */
+.footer {
+  background-color: #ffffff; /* Solid black background */
+  color: #000000; /* Pure white text for strong contrast */
+  padding: 60px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Footer Section Style */
+.footer-section {
+  flex: 1;
+  min-width: 270px;
+  padding: 25px;
+}
+
+.footer-section h3 {
+  font-size: 20px;
+  color: #000000; /* White for headings */
+  margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section ul li a {
+  color: #000000; /* White for all text */
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a:hover {
+  color: #000000; /* Slightly lighter white on hover */
+  text-decoration: underline;
+}
+
+.footer-section .social-icons .icon {
+  font-size: 24px;
+  color: #000000; /* White for social icons */
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.footer-section .social-icons .icon:hover {
+  color: #b3b3b3; /* Gray hover effect */
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #ffffff; /* Consistent black background */
+  border-top: 1px solid #444; /* Subtle gray separator */
+}
+
+.footer-logo h2 {
+
+  font-size: 24px;
+  color: #000000; 
+  font-style: normal;
+  margin: 0;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #000000; /* White text for footer */
+  margin: 10px 0;
+}
+
+.footer-links {
+  font-size: 14px;
+  color: #000000;
+}
+
+.footer-links a {
+  color: #000000;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #f5f5f5; /* Lighter white hover effect */
+}
+
+.footer-links span {
+  margin: 0 5px;
+  color: #000000; /* White separator */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-logo h2 {
+    font-size: 20px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+  }
+
+  .footer-links {
+    font-size: 12px;
+  }
+}
+
+
+/* Dark Theme Styles */
+
+/* Navbar Dark Theme */
+body.dark .navbar {
+  background-color: black;  /* Dark background for navbar */
+  color: white;  /* White text for navbar */
+}
+
+body.dark .navbar a {
+  color: white;  /* White links in navbar */
+}
+
+body.dark .navbar a:hover {
+  color: #f5f5f5;  /* Slightly lighter hover effect */
+}
+
+/* Footer Dark Theme */
+body.dark .footer {
+  background-color: #121212;  /* Dark background for footer */
+  color: white;  /* White text for footer */
+}
+
+body.dark .footer-section h3 {
+  color: white;  /* White headings in footer sections */
+}
+
+body.dark .footer-section p,
+body.dark .footer-section ul li a {
+  color: white;  /* White text for paragraphs and links */
+}
+
+body.dark .footer-section ul li a:hover {
+  color: #b3b3b3;  /* Lighter gray on hover */
+}
+
+body.dark .footer-section .social-icons .icon {
+  color: white;  /* White social icons */
+}
+
+body.dark .footer-section .social-icons .icon:hover {
+  color: #b3b3b3;  /* Gray hover effect on icons */
+}
+
+/* Footer Bottom Section */
+body.dark .footer-bottom {
+  background-color: #121212;  /* Dark background for footer bottom */
+  color: white;  /* White text */
+  border-top: 1px solid #444;  /* Subtle gray separator */
+}
+
+body.dark .footer-logo h2 {
+  color: white;  /* White logo text */
+}
+
+body.dark .footer-text {
+  color: white;  /* White footer text */
+}
+
+body.dark .footer-links a {
+  color: white;  /* White links in footer */
+}
+
+body.dark .footer-links a:hover {
+  color: #f5f5f5;  /* Light hover effect */
+}
+
+body.dark .footer-links span {
+  color: white;  /* White separator */
+}
+
+/* Responsive Design for Dark Theme */
+@media (max-width: 768px) {
+  body.dark .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  body.dark .footer-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  body.dark .footer-logo h2 {
+    font-size: 20px;
+  }
+
+  body.dark .footer-text {
+    font-size: 12px;
+  }
+
+  body.dark .footer-links {
+    font-size: 12px;
+  }
+}
